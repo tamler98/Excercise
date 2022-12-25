@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="compa" class="beans.tools.Compa"></bean>
+    <bean id="ruler" class="beans.tools.Ruler"></bean>
+    <bean id="Student" class="beans.Student">
+        <property name="compa" ref="compa"/>
+        <property name="ruler" ref="ruler"/>
+    </bean>
+</beans>
