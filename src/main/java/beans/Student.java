@@ -2,29 +2,28 @@ package beans;
 
 import beans.tools.Compa;
 import beans.tools.Ruler;
+import beans.tools.Tools;
+import beans.tools.ToolsList;
 
 public class Student {
-    private Compa compa;
-    private Ruler ruler;
+    private ToolsList toolsList;
 
-    public void setCompa(Compa compa) {
-        this.compa = compa;
+    public void setToolsList(ToolsList toolsList) {
+        this.toolsList = toolsList;
     }
-
-    public void setRuler(Ruler ruler) {
-        this.ruler = ruler;
-    }
-
     public void drawCircle()
     {
+        Compa compa = (Compa) toolsList.getToolsMap().get("Compa");
         compa.drawCircle();
     }
     public void drawSquare()
     {
+        Ruler ruler = (Ruler) toolsList.getToolsMap().get("Ruler");
         ruler.drawSquare();
     }
     public void drawRectangle()
     {
+        Ruler ruler = (Ruler) toolsList.getToolsMap().get("Ruler");
         ruler.drawRectangle();
     }
 

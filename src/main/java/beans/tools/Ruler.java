@@ -1,6 +1,6 @@
 package beans.tools;
 
-public class Ruler {
+public class Ruler implements Tools {
     private String name = "Ruler";
 
     public void drawSquare()

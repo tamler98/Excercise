@@ -1,6 +1,6 @@
 package beans.tools;
 
-public class Compa {
+public class Compa implements Tools{
     private String name = "Compa";
 
     public void drawCircle()
